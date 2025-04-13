@@ -1,0 +1,10 @@
+python -m venv venv
+pip install -r requirements.txt
+
+
+
+venv\Scripts\activate
+python ingest.py
+
+venv\Scripts\activate
+chainlit run model.py -w
